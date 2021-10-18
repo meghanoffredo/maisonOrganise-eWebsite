@@ -21,7 +21,7 @@ html {
     top: 0;
     width: 100%;
     margin: auto;
-    height: 6%;
+    height: 60px;
     z-index: 1;
     background-color: #699696;
     border-bottom: solid 1px #273737;
@@ -252,7 +252,7 @@ a:active, a:hover {
 }
 
 /* Optimize for Mobile*/
-@media only screen and (max-device-width: 480px), (orientation: landscape) {
+@media only screen and (max-device-width: 764px) {
 
       /* Image below nav bar*/
       .header-photo img {
@@ -303,7 +303,7 @@ a:active, a:hover {
 }
 
 /* Optimize for Tablet*/
-@media only screen and (min-device-width: 764px) and (max-device-width: 1024px), (orientation: landscape) {
+@media only screen and (min-device-width: 764px) and (max-device-width: 1024px) {
     
     /* Image below nav bar*/
     .header-photo img {
