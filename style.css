@@ -252,7 +252,7 @@ a:active, a:hover {
 }
 
 /* Optimize for Mobile*/
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 480px), (orientation: landscape) {
 
       /* Image below nav bar*/
       .header-photo img {
@@ -303,7 +303,7 @@ a:active, a:hover {
 }
 
 /* Optimize for Tablet*/
-@media only screen and (min-device-width: 764px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 764px) and (max-device-width: 1024px), (orientation: landscape) {
     
     /* Image below nav bar*/
     .header-photo img {
