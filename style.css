@@ -1,0 +1,219 @@
+/*Universal Styles*/
+html {
+    font-size: 16px;
+    color: #f5f8f8;
+    font-family: 'Open Sans Condensed', sans-serif; 
+}
+
+/*Navigation Bar*/
+.header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    justify-content: flex-start;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    height: 6%;
+    z-index: 1;
+    background-color: #699696;
+    border-bottom: solid 1px #273737;
+}
+
+.header h3 {
+    font-family: 'Allison', cursive;
+    font-size: 2.5rem;
+    align-self: center;
+    margin-left: 10px;
+    flex-basis: 20%;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: none;
+    justify-content: flex-end;
+    align-self: center;
+    flex-basis: 80%;
+}
+
+.nav li {
+    display: inline-flex;
+    list-style: none;
+    font-size: 1.4rem;
+    margin-right: 30px;
+}
+
+a:active, a:hover {
+    color: #273737;
+}
+
+/*Image below Header*/
+.header-photo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.header-photo img {
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    object-fit: cover;
+    opacity: .85;
+}
+
+/*Our Mission*/
+.mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.mission h1 {
+    font-family: 'Fjalla One', sans-serif;
+    color: #273737;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.mission p {
+    color: #273737;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 70px; /*Add space between sections*/
+    margin-top: 0px;
+}
+
+/*Our Work*/
+.work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.work h1{
+    display: flex;
+    font-family: 'Fjalla One', sans-serif;
+    color: #273737;
+    font-size: 4rem;
+    justify-content: center;
+}
+
+.work p {
+    color: #273737;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 70px; /*Add space between sections*/
+}
+
+.work-example img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: #273737;
+}
+
+/*Our Team*/
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.team h1{
+    display: flex;
+    font-family: 'Fjalla One', sans-serif;
+    color: #273737;
+    font-size: 4rem;
+    justify-content: center;
+}
+
+.team p {
+    color: #273737;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: #273737;
+}
+
+.team figcaption {
+    font-family: 'Fjalla One', sans-serif;
+    color: #273737;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 30px; /*Add space between sections*/
+}
+
+/*Our Team*/
+.clients {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.clients h1{
+    display: flex;
+    font-family: 'Fjalla One', sans-serif;
+    color: #273737;
+    font-size: 4rem;
+    justify-content: center;
+}
+
+.clients p i {
+    font-size: 1.7rem;
+}
+
+.clients p {
+    color: #273737;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.client-testimonial {
+    width: 300px;
+    height: 500px;
+    margin-bottom: 70px; /*Add space between sections*/
+}
+
+.client {
+    font-family: 'Fjalla One', sans-serif;
+    color: #273737;
+    text-align: center;
+    font-size: 3rem;
+}
