@@ -3,7 +3,13 @@ html {
     font-size: 16px;
     color: #273737;
     font-family: 'Open Sans Condensed', sans-serif; 
-    background-color: #f0f4f4;
+    background-color: #f0f4f4;   
+}
+
+/*Remove extra margins and padding from lefthand side*/
+*{
+    margin-left: 0px;
+    padding-left: 0px;
 }
 
 /*Navigation Bar*/
@@ -302,6 +308,11 @@ a:active, a:hover {
     /* Image below nav bar*/
     .header-photo img {
         height: 400px;
+    }
+
+    /* Mission */
+    .mission {
+        width: 90%;
     }
 
     /* Sample Work */
