@@ -252,7 +252,7 @@ a:active, a:hover {
 }
 
 /* Optimize for Mobile*/
-@media only screen and (max-device-width: 764px) {
+@media only screen and (max-device-width: 764dpx) {
 
       /* Image below nav bar*/
       .header-photo img {
