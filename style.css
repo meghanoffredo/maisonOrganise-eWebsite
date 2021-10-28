@@ -8,8 +8,9 @@ html {
 
 /*Remove extra margins and padding from lefthand side*/
 *{
-    margin-left: 0px;
-    padding-left: 0px;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 /*Navigation Bar*/
@@ -33,7 +34,7 @@ html {
     font-size: 3rem;
     align-self: center;
     margin-left: 20px;
-    flex-basis: 30%;
+    flex-basis: 35%;
 }
 
 .nav {
@@ -41,7 +42,7 @@ html {
     flex-wrap: none;
     justify-content: flex-end;
     align-self: center;
-    flex-basis: 70%;
+    flex-basis: 65%;
 }
 
 .nav li {
@@ -82,7 +83,7 @@ a:active, a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
+    width: 75%;
     margin: auto;
 }
 
@@ -91,13 +92,14 @@ a:active, a:hover {
     color: #273737;
     font-size: 4rem;
     text-align: center;
+    padding-top: 70px; /*Add space between sections*/
 }
 
 .mission p {
     font-size: 1.5rem;
     text-align: center;
+    align-self: center;
     margin-bottom: 70px; /*Add space between sections*/
-    margin-top: 0px;
 }
 
 /*Our Work*/
@@ -124,7 +126,7 @@ a:active, a:hover {
     margin-bottom: 50px;
 }
 
-.container {
+.container1 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -161,10 +163,11 @@ a:active, a:hover {
     margin-bottom: 50px;
 }
 
-.container {
+.container2 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-bottom: 70px; /*Add space between sections*/
 }
 
 .team-member img {
@@ -177,8 +180,6 @@ a:active, a:hover {
     font-family: 'Fjalla One', sans-serif;
     font-size: 1.4rem;
     text-align: center;
-    margin: 10px;
-    margin-bottom: 30px; /*Add space between sections*/
 }
 
 /*Our Team*/
@@ -195,27 +196,27 @@ a:active, a:hover {
     font-family: 'Fjalla One', sans-serif;
     font-size: 4rem;
     justify-content: center;
+    margin-bottom: 20px; /*Add space between H1 and testimonials*/
 }
 
-.clients p i {
-    font-size: 1.7rem;
+.container3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 70px; /*Add space between sections*/
 }
 
-.clients p {
+.client-testimonial p {
     font-size: 1.5rem;
     text-align: center;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.client-testimonial p i {
+    font-size: 1.7rem;
 }
 
 .client-testimonial {
     width: 300px;
-    height: 500px;
-    margin-bottom: 80px; /*Add space between sections*/
 }
 
 .client {
@@ -242,8 +243,6 @@ a:active, a:hover {
 .contact p {
     font-size: 1.5rem;
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
     background-color: #699696;
     padding: 20px;
     color: #f5f8f8;
@@ -251,11 +250,36 @@ a:active, a:hover {
     border-bottom: solid 1px #273737;
 }
 
-/* Optimize for Mobile*/
+/* OPTIMIZE FOR MOBILE */
 @media only screen and (max-device-width: 760px) {
 
-      /* Image below nav bar*/
-      .header-photo img {
+    /* Make logo and nav bar smaller */
+    .header {
+        height: 40px;
+    }
+
+    .header h3 {
+        font-size: 1.3rem;
+        margin-left: 10px;
+    }
+
+    .nav li {
+        font-size: .8rem;
+        margin-right: 8px;
+    }
+
+    /* Make H1 headers smaller */
+    .mission h1, .work h1, .clients h1, .contact h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Make p text smaller */
+    .mission p, .work p, .clients p, .contact p {
+        font-size: 1.2rem;
+    }
+
+    /* Image below nav bar*/
+    .header-photo img {
         height: 400px;
     }
 
@@ -266,44 +290,94 @@ a:active, a:hover {
 
     /* Sample Work */
     .work {
-        width: 90%;
+        display: flex; /* shift from row */
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
+
+    .container1 {
+        display: flex; /* shift from row */
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
     }
 
     .work-example img {
-        width: 170px;
+        align-items: center;
+        justify-items: center;
+        width: 250px;
         height: 170px;
-        object-fit: cover;
-        box-shadow: 10px 10px #699696;
+        margin: 20px;
     }
 
     /* Team */
+    .team {
+        display: flex; /* shift from row */
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
+
+    .container2 {
+        display: flex;
+        flex-direction: column; /* shift from row */
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
+
     .team-member img {
-        width: 150px;
+        align-items: center;
+        justify-items: center;
         height: 150px;
-        object-fit: cover;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    figcaption {
+        padding-bottom: 20px;
     }
 
     /* Testimonials */
     .clients {
-        width: 90%;
+        display: flex; /* shift from row */
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
+
+    .container3 {
+        display: flex;
+        flex-direction: column; /* shift from row */
+        justify-content: center;
+        align-content: center;
+        width: 100%;
     }
 
     .client-testimonial {
-        width: 250px;
-        height: 350px;
-        margin: 5px;
-        margin-bottom: 200px; /* Extra margin needed before last section */
+        height: 400px;
+        margin: auto;
     }
 
-    .clients p {
-        font-size: 1.3rem;
-        text-align: center;
+    /* Make footer / contact section smaller */
+    .contact p {
+        font-size: 1rem;
     }
 
 }
 
-/* Optimize for Tablet*/
-@media only screen and (min-device-width: 760px) and (max-device-width: 1024px) {
+/* OPTIMIZE FOR TABLETt*/
+@media only screen and (min-device-width: 761px) and (max-device-width: 1200px) {
+
+    /* Make logo and nav bar smaller */
+    .header h3 {
+        font-size: 2.5rem;
+    }
 
     /* Image below nav bar*/
     .header-photo img {
@@ -321,10 +395,8 @@ a:active, a:hover {
     }
 
     .work-example img {
-        width: 170px;
-        height: 170px;
-        object-fit: cover;
-        box-shadow: 10px 10px #699696;
+        width: 150px;
+        height: 150px;
     }
 
     /* Team */
@@ -335,19 +407,58 @@ a:active, a:hover {
     }
 
     /* Testimonials */
-    .clients {
-        width: 90%;
+    .container3 {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        margin: auto;
     }
 
     .client-testimonial {
-        width: 250px;
-        height: 350px;
-        margin: 5px;
-        margin-bottom: 200px; /* Extra margin needed before last section */
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 50px; /* Extra margin needed before last section */
     }
 
-    .clients p {
+    .client-testimonial p i {
         font-size: 1.3rem;
-        text-align: center;
     }
+
+    /* Make footer / contact section smaller */
+    .contact p {
+        font-size: 1.3rem;
+    }
+}
+
+/* OPTIMIZE FOR LAPTOP & SMALL BROWSER*/
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1700px) {
+
+/* Sample Work */
+.work {
+    width: 90%;
+}
+
+.work-example img {
+    width: 250px;
+    height: 250px;
+}
+
+/* Team */
+.team-member img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+}
+
+/* Testimonials */
+.clients {
+    width: 90%;
+}
+
+.client-testimonial {
+    width: 350px;
+    height: 450px;
+}
 }
