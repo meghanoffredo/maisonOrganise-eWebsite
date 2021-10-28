@@ -2,8 +2,8 @@
 html {
     font-size: 16px;
     color: #273737;
-    font-family: 'Open Sans Condensed', sans-serif; 
-    background-color: #f0f4f4;   
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: #f0f4f4;
 }
 
 /*Remove extra margins and padding from lefthand side*/
@@ -252,7 +252,7 @@ a:active, a:hover {
 }
 
 /* Optimize for Mobile*/
-@media only screen and (max-device-width: 764dpx) {
+@media only screen and (max-device-width: 760px) {
 
       /* Image below nav bar*/
       .header-photo img {
@@ -299,12 +299,12 @@ a:active, a:hover {
         font-size: 1.3rem;
         text-align: center;
     }
-    
+
 }
 
 /* Optimize for Tablet*/
-@media only screen and (min-device-width: 764px) and (max-device-width: 1024px) {
-    
+@media only screen and (min-device-width: 760px) and (max-device-width: 1024px) {
+
     /* Image below nav bar*/
     .header-photo img {
         height: 400px;
