@@ -269,12 +269,12 @@ a:active, a:hover {
     }
 
     /* Make H1 headers smaller */
-    .mission h1, .work h1, .clients h1, .contact h1 {
+    .mission h1, .work h1, .team h1, .clients h1, .contact h1 {
         font-size: 2.5rem;
     }
 
     /* Make p text smaller */
-    .mission p, .work p, .clients p, .contact p {
+    .mission p, .work p, .team p, .clients p, .contact p {
         font-size: 1.2rem;
     }
 
@@ -294,7 +294,11 @@ a:active, a:hover {
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        width: 100%;
+        width: 90%;
+    }
+
+    .work p {
+        margin-bottom: 10px;
     }
 
     .container1 {
@@ -319,7 +323,7 @@ a:active, a:hover {
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        width: 100%;
+        width: 90%;
     }
 
     .container2 {
