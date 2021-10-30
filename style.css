@@ -251,7 +251,7 @@ a:active, a:hover {
 }
 
 /* OPTIMIZE FOR MOBILE */
-@media only screen and (max-device-width: 760px) {
+@media only screen and (max-width: 760px) {
 
     /* Make logo and nav bar smaller */
     .header {
@@ -376,7 +376,7 @@ a:active, a:hover {
 }
 
 /* OPTIMIZE FOR TABLETt*/
-@media only screen and (min-device-width: 761px) and (max-device-width: 1200px) {
+@media only screen and (min-width: 761px) and (max-width: 1200px) {
 
     /* Make logo and nav bar smaller */
     .header h3 {
@@ -437,7 +437,7 @@ a:active, a:hover {
 }
 
 /* OPTIMIZE FOR LAPTOP & SMALL BROWSER*/
-@media only screen and (min-device-width: 1200px) and (max-device-width: 1700px) {
+@media only screen and (min-width: 1200px) and (max-width: 1700px) {
 
 /* Sample Work */
 .work {
