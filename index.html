@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="widtd=device-width, initial-scale=1.0", user-scalable="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalable="no">
     <link href="style.css" rel="stylesheet" type="text/css">
     <title>La Maison Organisée</title>
     <!-- Google Fonts -->
@@ -106,7 +106,46 @@
     <!-- Contact Us -->
     <div class="contact" id="contact">
         <h1>Contact Us</h1>
-        <p>p: 555-123-1234  |  e: bonjour@maisonorganisee.com  |  a: 806 E 8th Street New York, New York</p>
+        <div class="contact-form">
+            <p class="contact-form-title">Submit your enquiry directly to our team using the form below.</p>
+            <form class="contact-form" action="https://formspree.io/f/meqvbodb" method="post"> 
+              <section class="firstLastName"></section>
+                <label for="firstLastName">First & Last Name</label>
+                <br>
+                <input type="text" name="firstLastName" id="firstLastName">
+              </section>
+              <section class="email"></section>
+                  <label for="email">Email Address</label>
+                  <br>
+                  <input type="text" name="email" id="email">
+              </section>
+              <section class="phone"></section>
+                  <label for="phone">Phone Number</label>
+                  <br>
+                  <input type="text" name="phone" id="phone">
+              </section>
+              <section class="request">
+                <label for="request">How can we help you?</label>
+                <br>
+                <textarea id="request" name="request" rows="5" cols="50"></textarea>
+              </section>
+              <section class="preferredContact">
+                <span>Do you prefer a response via Phone or Email?</span>
+                <br>
+                <input type="radio" name="preferredContact" id="email" value="email">
+                <label for="email">Email</label>
+                <input type="radio" name="phone" id="phone" value="phone">
+                <label for="phone">Phone</label>
+              </section>
+              <section class="submission">
+                <input type="submit" value="Submit">
+              </section>
+            </form>
+            <p class="contact-details">p: 555-123-1234  |  e: bonjour@maisonorganisee.com  |  a: 806 E 8th Street New York, New York</p>
     </div>
+
+    <footer>
+        <p>© 2021 La Maison Organisée | All Right Reserved</p>
+    </footer>
 
 </body>
